@@ -3,6 +3,8 @@ import Apples, {Bananas1, Orange} from './components/01-my-house';
 import Jsx1 from './components/02-jsx/01-jsx';
 import Jsx2 from './components/02-jsx/02-jsx';
 import Jsx3 from './components/02-jsx/03-jsx';
+import Jsx4 from './components/02-jsx/04-jsx';
+import InlineStyling from './components/03-styles/01-inline-styling';
 
 
 export default function App() {
@@ -14,6 +16,8 @@ export default function App() {
           <Jsx1/>
           <Jsx2/>
           <Jsx3/>
+          <Jsx4/>
+          <InlineStyling />
       </>
     )
 };

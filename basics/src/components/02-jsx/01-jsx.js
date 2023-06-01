@@ -4,7 +4,7 @@ const Jsx1 = () => {
     const user = {
         name: "Jonathan",
         age: 30,
-    }
+    };
 
     return (
         <> 
