@@ -23,7 +23,7 @@ export default function InternalStyling() {
             <p style={styleParagraph}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit et laborum iste blanditiis mollitia est autem voluptas rerum explicabo nobis numquam nemo aliquam saepe itaque facilis, tempore officiis, cumque odio?
             </p>
-            {/* INTERNAL ve EXTERNAL STYLING */}
+            {/* INTERNAL ve INLINE STYLING */}
             <p style={{
                 ...styleTitle,
                 color: 'navy',

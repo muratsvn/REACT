@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "../03-styles/04-external-module.css";
 
 const Jsx4 = () => {
     const names = ["Maria Rodriguez", "Michael Chen", "Sarah Kim", "Ahmed Hassan", "Sarah Kim"];
@@ -12,11 +13,9 @@ const Jsx4 = () => {
 
     const check = true;
 
-    console.log(nameInfo);
-
     return (
         <div>
-            <ul>
+            <ul className='{styles.externalModuleStyling}'>
                 {
                     names.map((name, index) => <li key={index}>{name}</li>)
                 }

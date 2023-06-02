@@ -1,11 +1,9 @@
-import React from 'react';
-
 function Jsx2() {
-    const isAdmin = true;
+    const isAdmin = false;
     const loading = false;
 
-    if(loading) {
-        console.log(loading);
+    if (loading) {
+        console.log("Loading..")
     }
 
     return (
@@ -20,13 +18,15 @@ function Jsx2() {
                             <li>Kullaniciyi Sil</li>
                         </ul>
                     </>
-                    : <>
-                        <h2>Kullanici Menu</h2>
-                        <ul>
-                            <li>Profilim</li>
-                            <li>Cikis Yap</li>
-                        </ul>
-                    </>
+                    : loading
+                        ? <h2>Loading...</h2>
+                        : <>
+                            <h2>Kullanici Menu</h2>
+                            <ul>
+                                <li>Profilim</li>
+                                <li>Cikis Yap</li>
+                            </ul>
+                        </>
             }
         </>
     )
