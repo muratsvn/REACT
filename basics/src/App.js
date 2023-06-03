@@ -12,7 +12,9 @@ import SassScss from './components/03-styles/05-sass.scss';
 import DijitalSaatUygulamasi1 from './components/04-dijital-saat-uygulamasi1/dijital-saat-uygulamasi1';
 import Greetings from './components/05-props/01-greetings';
 import Products from './components/05-props/05-products';
-import ProductCard from './06-product-card';
+import ProductCard from './components/05-props/06-product-card';
+import DijitalSaatUygulamasi2 from './components/06-dijital-saat-uygulamasi2/dijital-saat-uygulamasi2';
+import Image from './components/07-images/01-image';
 
 export default function App() {
     return (
@@ -48,6 +50,10 @@ export default function App() {
             <Products/>
             <br />
             <ProductCard/>
+            <br />
+            <DijitalSaatUygulamasi2 textColor="white" bgColor="red" />
+            <br />
+            <Image/>
             <br />
             <br />
         </>
