@@ -1,16 +1,16 @@
 function Jsx2() {
-    const isAdmin = false;
+    const isAdmin = true;
     const loading = false;
 
-    if (loading) {
+    /* if (loading) {
         console.log("Loading..")
-    }
+    } */
 
     return (
         <>
             {
-                isAdmin
-                    ? <>
+                isAdmin ?
+                     <>
                         <h2>Admin Menu</h2>
                         <ul>
                             <li>Kullanici Olustur</li>

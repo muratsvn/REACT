@@ -1,31 +1,32 @@
-import React from 'react'
+import React from "react";
 
 const Jsx3 = () => {
-    const user = {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 25,
-        email: "john@example.com",
-        occupation: "Godfather of the Developers"
-    };
+  const user = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 25,
+    email: "john@example.com",
+    occupation: "Godfather of the Developers",
+  };
 
-    const error = true;
+  const error = true;
 
-    const { firstName, age } = user;
+  const { firstName, age } = user;
 
-    return (
-        <div>
-            {
-                age >= 18 && <h1>Bu icerik 18 yasindan buyuklere ozeldir</h1>
-            }
-            {
-                age > 17 || <h1>Bu icerik 17 yasindan kucukler icindir</h1>
-            }
-            {
-                error && <p>Burada bir hata bulunmaktadir</p>
-            }
-        </div>
-    )
-}
+  return (
+    <div>
+      <div>
+        {user.age > 18 && <h2>Ehliyet alabilir</h2>}
+        {user.age < 18 && <h2>Ehliyet alamaz</h2>}
+      </div>
 
-export default Jsx3
+      <div>
+        {age >= 18 && <h1>Bu icerik 18 yasindan buyuklere ozeldir</h1>}
+        {age > 17 || <h1>Bu icerik 17 yasindan kucukler icindir</h1>}
+        {error && <p>Burada bir hata bulunmaktadir</p>}
+      </div>
+    </div>
+  );
+};
+
+export default Jsx3;

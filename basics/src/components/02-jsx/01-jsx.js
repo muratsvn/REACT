@@ -7,13 +7,13 @@ const Jsx1 = () => {
     };
 
     return (
-        <>
+        <> {/* React.Fragment ifadesidir. En üstte parent olarak kullanılabilir */}
             <p>
                 Butun JSX kodlari bir element icinde olmalidir.
                 {/* ben bir yorum satiriyim */}
             </p>
             <p>
-                Merhaba {name}
+                Merhaba {name}{/* süslü parantez kullanmak js ifadesi kullanmaktır */}
             </p>
             <h2>KULLANICI BILGILERI</h2>
             <p>
