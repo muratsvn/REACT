@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../03-styles/04-external-module.css";
+import styles from "../03-styles/04-external.module.css";
 
 const Jsx4 = () => {
     const names = ["Mariah Rodriguez", "Michael Chen", "Sarah Kim", "Ahmed Hassan", "Sarah Kim"];

@@ -3,9 +3,12 @@ import './dijital-saat-uygulamasi1.scss';
 import moment from 'moment';
 
 const DijitalSaatUygulamasi1 = () => {
+    const dateTime = moment();
+    //require('moment/locale/tr'); ülke bazında değişiklik yapabiliriz
+    
     const timeStr = moment().format("HH:mm");
     const dateStr = moment().format("LL");
-    const dayStr = moment().format("dddd");
+    const dayStr = dateTime.format("dddd");
     const hour = moment().hour();
 
     let message = '';

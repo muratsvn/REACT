@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './04-external-module.css';
+import styles from './04-external.module.css';
 
 const ExternalModuleStyling = () => {
     const { externalModuleStyling, title } = styles;
