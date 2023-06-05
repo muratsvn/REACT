@@ -51,7 +51,7 @@ export default function App() {
             <br />
             <ProductCard/>
             <br />
-            <DijitalSaatUygulamasi2 textColor="white" bgColor="red" />
+            <DijitalSaatUygulamasi2 textColor="yellow" bgColor="red" />
             <br />
             <Image/>
             <br />
