@@ -1,7 +1,9 @@
 import React from 'react';
 import Korkuluk from "../../assets/img/image2.jpg";
 
-const Image = () => {
+const Image = (props) => {
+
+    // TODO: ortak stiller
     const ortakStil = {
         margin: '0 1rem',
         height: '200px',
@@ -11,7 +13,7 @@ const Image = () => {
         <div>
             {/* STATIK IMAGE */}
             <img
-                src="./image4.jpg"
+                src="./image1.jpg"
                 alt="northern light"
                 title='northern lights'
                 style={ortakStil}
@@ -41,4 +43,4 @@ const Image = () => {
     )
 }
 
-export default Image
+export default Image;
