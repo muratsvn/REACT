@@ -16,6 +16,7 @@ import ProductCard from './components/05-props/06-product-card';
 import DijitalSaatUygulamasi2 from './components/06-dijital-saat-uygulamasi2/dijital-saat-uygulamasi2';
 import Image from './components/07-images/01-image';
 import ImageGallery from './components/07-images/02-image-gallery';
+import ProfileCard from './components/08-profile-card/profile-card';
 
 export default function App() {
     return (
@@ -57,6 +58,9 @@ export default function App() {
             <Image/>
             <br />
             <ImageGallery/>
+            <br />
+            <ProfileCard/>
+            <br />
             <br />
         </>
     )
