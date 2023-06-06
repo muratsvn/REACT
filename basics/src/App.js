@@ -59,7 +59,7 @@ export default function App() {
             <br />
             <ImageGallery/>
             <br />
-            <ProfileCard/>
+            <ProfileCard name="Walker" location="Nashville, Tennesse"/>
             <br />
             <br />
         </>

@@ -1,40 +1,55 @@
-import React from 'react'
-import "./profile-card.scss"
+import React from 'react';
+import "./profile-card.scss";
+import Statistics from './statistics/statistics';
 
-const ProfileCard = () => {
-    const img = require(`../../assets/img/profile-card.jpg`)
+const statisticsInfo = [
+    { title: "Shot", stat: 2 },
+    { title: "Follower", stat: 234 },
+    { title: "Following", stat: 327 },
+];
+
+// TODO: props'lari spread yaparak object olarak gonder
+
+const ProfileCard = (props) => {
+    const img = require(`../../assets/img/profile-card.jpg`);
     const profileBackground = {
         backgroundImage: `url(${img})`
-    }
-  return (
-    <div className='profile-card'>
-        <div className='header' style={profileBackground}>
+    };
 
-        </div>
-        
-        <div className='content'>
-            <div className="avatar" style={profileBackground}>
-                <h3>Walker</h3>
-                <h5>Nashville, Tennesse</h5>
-                <div>
-                    <div>
+    return (
+        <div className='profile-card'>
+            <div className='header' style={profileBackground}>
+            </div>
+            <div className='content'>
+                <div className='avatar' style={profileBackground}></div>
+                <h3>{props.name}</h3>
+                <h5>{props.location}</h5>
+                <div className='stats'>
+
+                    {
+                        statisticsInfo.map((item, index) => (<Statistics key={index} title={item.title} stat={item.stat} />))
+                    }
+
+                    {/* <Statistics title="Shot" stat={2} />
+                    <Statistics title="Follower" stat={234} />
+                    <Statistics title="Following" stat={327} /> */}
+
+                    {/* <div>
                         <h2>2</h2>
                         <span>Shot</span>
                     </div>
                     <div>
                         <h2>234</h2>
-                        <span></span>
+                        <span>Follower</span>
                     </div>
-                    <div>Follewer
+                    <div>
                         <h2>327</h2>
                         <span>Following</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
-    
-    </div>
-  )
-}
+    )
+};
 
-export default ProfileCard
+export default ProfileCard;
