@@ -22,6 +22,7 @@ import BootstrapModernYontem from './components/09-bootstrap/02-bootstrap-modern
 import "./assets/scss/style.scss";
 import ReactIcons from './components/10-icons/01-react-icons';
 import MaterialIcons from './components/10-icons/02-material-icons';
+import Gallery from './components/100-ornek/gallery';
 
 const profileCardData = {
     name: "Emir",
@@ -103,6 +104,8 @@ export default function App() {
             <ReactIcons/>
             <br />
             <MaterialIcons/>
+            <br />
+            <Gallery/>
             <br />
         </>
     )
