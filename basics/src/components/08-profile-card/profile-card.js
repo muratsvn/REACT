@@ -2,16 +2,9 @@ import React from 'react';
 import "./profile-card.scss";
 import Statistics from './statistics/statistics';
 
-const statisticsInfo = [
-    { title: "Shot", stat: 2 },
-    { title: "Follower", stat: 234 },
-    { title: "Following", stat: 327 },
-];
-
-// TODO: props'lari spread yaparak object olarak gonder
 
 const ProfileCard = (props) => {
-    const img = require(`../../assets/img/profile-card.jpg`);
+    const img = require(`../../assets/img/${props.image || 'profile-card.jpg'}`);
     const profileBackground = {
         backgroundImage: `url(${img})`
     };
@@ -27,7 +20,13 @@ const ProfileCard = (props) => {
                 <div className='stats'>
 
                     {
-                        statisticsInfo.map((item, index) => (<Statistics key={index} title={item.title} stat={item.stat} />))
+                        props.statistics.map((item, index) => (
+                            <Statistics
+                                key={index}
+                                title={item.title}
+                                stat={item.stat}
+                            />
+                        ))
                     }
 
                     {/* <Statistics title="Shot" stat={2} />

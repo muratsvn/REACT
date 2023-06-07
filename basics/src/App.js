@@ -17,6 +17,22 @@ import DijitalSaatUygulamasi2 from './components/06-dijital-saat-uygulamasi2/dij
 import Image from './components/07-images/01-image';
 import ImageGallery from './components/07-images/02-image-gallery';
 import ProfileCard from './components/08-profile-card/profile-card';
+import BootstrapKlasikYontem from './components/09-bootstrap/01-bootstrap-klasik-yontem';
+import BootstrapModernYontem from './components/09-bootstrap/02-bootstrap-modern-yontem';
+import "./assets/scss/style.scss";
+import ReactIcons from './components/10-icons/01-react-icons';
+import MaterialIcons from './components/10-icons/02-material-icons';
+
+const profileCardData = {
+    name: "Emir",
+    location: "New York",
+    image: "person4.jpg",
+    statistics: [
+        { title: "Likes", stat: 145 },
+        { title: "Photos", stat: 7 },
+        { title: "Following", stat: 329 },
+    ]
+};
 
 export default function App() {
     return (
@@ -43,25 +59,61 @@ export default function App() {
             <br />
             <ExternalModuleStyling />
             <br />
-            <SassScss/>
+            <SassScss />
             <br />
-            <DijitalSaatUygulamasi1/>
+            <DijitalSaatUygulamasi1 />
             <br />
-            <Greetings/>
+            <Greetings />
             <br />
-            <Products/>
+            <Products />
             <br />
-            <ProductCard/>
+            <DijitalSaatUygulamasi2 textColor="white" bgColor="red" />
             <br />
-            <DijitalSaatUygulamasi2 textColor="yellow" bgColor="red" />
+            <Image />
             <br />
-            <Image/>
+            <ImageGallery />
             <br />
-            <ImageGallery/>
+            <ProfileCard
+                name="Walker"
+                location="Nashville, Tennesse"
+                image="profile-card.jpg"
+                statistics={[
+                    { title: "Shot", stat: 2 },
+                    { title: "Follower", stat: 234 },
+                    { title: "Following", stat: 327 },
+                ]}
+            />
+            <ProfileCard
+                name="Kyle"
+                location="London"
+                image="profile.jpg"
+                statistics={[
+                    { title: "Likes", stat: 50 },
+                    { title: "Photos", stat: 12 },
+                    { title: "Following", stat: 10 },
+                ]}
+            />
             <br />
-            <ProfileCard name="Walker" location="Nashville, Tennesse"/>
+            <ProfileCard {...profileCardData} />
             <br />
+            <BootstrapKlasikYontem/>
+            <br />
+            <BootstrapModernYontem/>
+            <br />
+            <ReactIcons/>
+            <br />
+            <MaterialIcons/>
             <br />
         </>
     )
 };
+
+
+
+
+
+
+
+
+
+
