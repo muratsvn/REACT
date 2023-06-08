@@ -1,6 +1,6 @@
 import React from 'react'
 import "./gallery.scss";
-import images from "./image.json";
+import images from "./images.json";
 
 const Gallery = () => {
   return (
@@ -8,7 +8,7 @@ const Gallery = () => {
         {
         images.map((img, i)=> 
             <div  key={i}>
-                <img src={`../../assets/img/${img.name}`} alt=''/>
+                <img src={require(`../../assets/img/${img.name}`)} alt=''/>
             </div>)
         }
 

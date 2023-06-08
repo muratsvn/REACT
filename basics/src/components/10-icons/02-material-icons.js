@@ -2,17 +2,20 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import FlutterDashIcon from '@mui/icons-material/FlutterDash';
 import {EmojiNature} from '@mui/icons-material';
+import { theme } from './theme';
+import { ThemeProvider } from '@mui/material';
+
 
 const MaterialIcons = () => {
-  return (
-    <Container>
+  return (  
+    <ThemeProvider theme={theme}> 
+      <Container>
         <h2>Material Iconst</h2>
-        <FlutterDashIcon/>
-        <EmojiNature fontSize='large' color='warning'/>
-
-
-    </Container>
+        <FlutterDashIcon fontSize='large' color='myColor'/>
+        <EmojiNature fontSize='large' color='secondary'/>
+      </Container>
+    </ThemeProvider>
   )
-}
+};
 
 export default MaterialIcons
