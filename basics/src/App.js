@@ -26,6 +26,8 @@ import Gallery from './components/100-ornek/gallery';
 import Events from './components/11-events/events';
 import ProductShop from './components/12-product-shop/product-shop';
 import State from './components/13-usestate/01-state';
+import Counter1 from './components/14-counter1/counter1';
+import Birthday from './components/15-birthday/birthday';
 
 const profileCardData = {
     name: "Emir",
@@ -117,6 +119,11 @@ export default function App() {
             <br />
             <State/>    
             <br />
+            <Counter1/> 
+            <br />
+            <Birthday/>
+            <br />
+               
             
         </>
     )
