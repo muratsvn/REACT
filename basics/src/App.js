@@ -23,9 +23,9 @@ import "./assets/scss/style.scss";
 import ReactIcons from './components/10-icons/01-react-icons';
 import MaterialIcons from './components/10-icons/02-material-icons';
 import Gallery from './components/100-ornek/gallery';
-import ProfileCardOrnek from './components/101-ornek/profile-card-ornek';
 import Events from './components/11-events/events';
 import ProductShop from './components/12-product-shop/product-shop';
+import State from './components/13-usestate/01-state';
 
 const profileCardData = {
     name: "Emir",
@@ -110,12 +110,12 @@ export default function App() {
             <br />
             <Gallery/>
             <br />
-            <ProfileCardOrnek avatar="person4.jpg" name="Ali" location="New York" shot="145" followers="329" following='33'/>
             <br />
             <Events/>
             <br />
-            <ProductShop/>
+            <ProductShop/> 
             <br />
+            <State/>    
             <br />
             
         </>
