@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Apples, { Bananas1, Orange } from './components/01-my-house';
 import Jsx1 from './components/02-jsx/01-jsx';
 import Jsx2 from './components/02-jsx/02-jsx';
@@ -19,15 +19,19 @@ import ImageGallery from './components/07-images/02-image-gallery';
 import ProfileCard from './components/08-profile-card/profile-card';
 import BootstrapKlasikYontem from './components/09-bootstrap/01-bootstrap-klasik-yontem';
 import BootstrapModernYontem from './components/09-bootstrap/02-bootstrap-modern-yontem';
-import "./assets/scss/style.scss";
 import ReactIcons from './components/10-icons/01-react-icons';
 import MaterialIcons from './components/10-icons/02-material-icons';
 import Gallery from './components/100-ornek/gallery';
 import Events from './components/11-events/events';
+
+// STYLE IMPORT
+import "./assets/scss/style.scss";
 import ProductShop from './components/12-product-shop/product-shop';
 import State from './components/13-usestate/01-state';
 import Counter1 from './components/14-counter1/counter1';
 import Birthday from './components/15-birthday/birthday';
+import UseEffect from './components/16-useeffect/useeffect';
+import { Button } from 'react-bootstrap';
 
 const profileCardData = {
     name: "Emir",
@@ -40,7 +44,10 @@ const profileCardData = {
     ]
 };
 
+    
 export default function App() {
+
+    const [show, setShow] = useState(true);
     return (
         <>
             <Apples />
@@ -123,6 +130,13 @@ export default function App() {
             <br />
             <Birthday/>
             <br />
+            <Button onClick={() => setShow(prev => !prev)}>
+                use Effect Hook'unu Gizle
+            </Button>
+            {show && <UseEffect />}
+            <br />
+            <br />
+            
                
             
         </>

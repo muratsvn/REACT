@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Button, Container} from 'react-bootstrap';
+import {Button, ButtonGroup, Container, Row} from 'react-bootstrap';
 import peopleData from "../../assets/data/people.json";
 import Person from './person/person';
 
@@ -7,20 +7,32 @@ const Birthday = () => {
 
     const [people, setPeople] = useState(peopleData);
 
-
+    const deletePerson = (id) => {
+        const arr = people.filter((person) => person.id !== id);
+        setPeople(arr);
+    }
   return (
     <Container>
 
-        <h2>Bugun Doganlar</h2>
+        <h2>Bugün Doğanlar</h2>
         <p>
-            Bugun dogan 10 kisi var.
+            Bugün doğan {people.length > 0 ? people.length : 0} kisi var.
         </p>
+        <Row>
         {
-                people.map((person) => (<Person key={person.id} {...person} />))
+                people.map((person) => (<Person key={person.id} {...person} deletePerson={deletePerson}/>))
         }
-        <Button variant="danger">
-            Hepsini Temizle
-        </Button>
+        </Row>
+
+        <ButtonGroup>
+            <Button variant="danger" onClick={()=> setPeople([])}>
+                Hepsini Temizle
+            </Button>
+
+            <Button variant="success" onClick={()=> setPeople(peopleData)}>
+                Verileri Getir
+            </Button>
+        </ButtonGroup>
     </Container>
   )
 }
