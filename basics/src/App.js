@@ -32,6 +32,8 @@ import Counter1 from './components/14-counter1/counter1';
 import Birthday from './components/15-birthday/birthday';
 import UseEffect from './components/16-useeffect/useeffect';
 import { Button } from 'react-bootstrap';
+import DijitalSaatUygulamasi3 from './components/17-dijital-saat-uygulamasi3/dijital-saat-uygulamasi3';
+import FilterList from './components/18-filter-list/filter-list';
 
 const profileCardData = {
     name: "Emir",
@@ -134,6 +136,10 @@ export default function App() {
                 use Effect Hook'unu Gizle
             </Button>
             {show && <UseEffect />}
+            <br />
+            <DijitalSaatUygulamasi3 textColor="gold" bgColor="emerald"/>
+            <br />
+            <FilterList />
             <br />
             <br />
             
