@@ -12,7 +12,7 @@ import SassScss from './components/03-styles/05-sass.scss';
 import DijitalSaatUygulamasi1 from './components/04-dijital-saat-uygulamasi1/dijital-saat-uygulamasi1';
 import Greetings from './components/05-props/01-greetings';
 import Products from './components/05-props/05-products';
-import ProductCard from './components/05-props/06-product-card';
+//import ProductCard from './components/05-props/06-product-card';
 import DijitalSaatUygulamasi2 from './components/06-dijital-saat-uygulamasi2/dijital-saat-uygulamasi2';
 import Image from './components/07-images/01-image';
 import ImageGallery from './components/07-images/02-image-gallery';
@@ -35,6 +35,9 @@ import { Button } from 'react-bootstrap';
 import DijitalSaatUygulamasi3 from './components/17-dijital-saat-uygulamasi3/dijital-saat-uygulamasi3';
 import FilterList from './components/18-filter-list/filter-list';
 import Useref from './components/19-useref/useref';
+import ClassTurundeComponentler from './components/20-component-turleri/01-class-turunde-componentler';
+import FonksiyonTurundeComponentler from './components/20-component-turleri/02-fonksiyon-turunde-componentler';
+import Fetch from './components/21-fetch/01-fetch';
 
 const profileCardData = {
     name: "Emir",
@@ -144,7 +147,12 @@ export default function App() {
             <br />
             <Useref/>
             <br />
-            
+            {show && <ClassTurundeComponentler/>}
+            <br />
+            <FonksiyonTurundeComponentler/>
+            <br />
+            <Fetch/>
+            <br />
                
             
         </>
