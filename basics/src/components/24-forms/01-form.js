@@ -6,6 +6,7 @@ const Form1 = () => {
 
     const handleChange = (e) =>{
         setFullName(e.target.value);
+        console.log(e.target.value);
     }
   return (
     <Container>
