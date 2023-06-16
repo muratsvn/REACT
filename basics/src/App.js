@@ -40,6 +40,9 @@ import FonksiyonTurundeComponentler from './components/20-component-turleri/02-f
 import Fetch2 from './components/21-fetch/02-fetch';
 import Fetch1 from './components/21-fetch/01-fetch';
 import Countries from './components/22-axios/countries';
+import ParentComponent from './components/23-lifting-state-up/01-parent-component';
+import Form1 from './components/24-forms/01-form';
+
 
 const profileCardData = {
     name: "Emir",
@@ -158,6 +161,10 @@ export default function App() {
             <Fetch2/>
             <br />
             <Countries />
+            <br />
+            <ParentComponent />
+            <br />
+            <Form1 />
             <br />
                
             
