@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import Apples, { Bananas1, Orange } from './components/01-my-house';
 import Jsx1 from './components/02-jsx/01-jsx';
 import Jsx2 from './components/02-jsx/02-jsx';
@@ -187,6 +187,16 @@ export default function App() {
             <br />
                
             
+        </>
+    )
+}; */
+
+import AppRouter from "./router/router";
+
+export default function App() {
+    return (
+        <>
+            <AppRouter />
         </>
     )
 };
