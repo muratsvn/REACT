@@ -5,7 +5,7 @@ import ChildComponent from './02-child-component';
 const ParentComponent = () => {
     const [counter, setCounter] = useState(0);
     // const handleCounter = (val) => {
-    //     setCounter(prev => prev + val);
+    // setCounter(prev => prev + val);
     // }
 
     return (

@@ -7,18 +7,10 @@ const Country = (props) => {
             <td>
                 <img src={props.flag} alt={props.name} title={props.name} width={70} />
             </td>
-            <td>
-                {props.name}
-            </td>
-            <td>
-                {props.population}
-            </td>
-            <td>
-                {props.capital}
-            </td>
-            <td>
-                $
-            </td>
+            <td>{props.name}</td>
+            <td>{props.population}</td>
+            <td>{props.capital}</td>
+            <td>$</td>
         </tr>
     )
 }

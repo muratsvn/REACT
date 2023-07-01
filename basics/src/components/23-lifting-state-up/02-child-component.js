@@ -1,14 +1,15 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 
-const ChildComponent = (props) => {
+const ChildComponent = ({setCounter}) => {
+    
 
     // const increaseCounter = () => {
-    //     props.handleCounter(1)
+    // props.handleCounter(1)
     // }
 
     const increaseCounter = () => {
-        props.setCounter(prev => prev + 1)
+        setCounter(prev => prev + 1)
     }
 
     console.log('ChildComponent rendered')

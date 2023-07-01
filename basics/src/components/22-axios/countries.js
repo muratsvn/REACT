@@ -51,7 +51,8 @@ const Countries = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {countries.map((item, index) => <Country key={item.ccn3} {...item} index={index} />)}
+                            {countries.map((item, index) =>
+                                 <Country key={item.ccn3} {...item} index={index} />)}
                         </tbody>
                     </Table>
             }
