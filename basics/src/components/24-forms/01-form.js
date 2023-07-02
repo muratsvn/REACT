@@ -13,7 +13,7 @@ const Form1 = () => {
         <h2>FORMLAR</h2>
 
         <form>
-            <label htmlFor='fullName'>ULLNAME:</label>
+            <label htmlFor='fullName'>FULLNAME:</label>
             <input 
                 type='text' 
                 id='fullName' 

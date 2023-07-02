@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage, NotFoundPage } from '../pages';
-import { Apples, Bananas1, Orange, Jsx1, Jsx2, Jsx3, Jsx4, InlineStyling, InternalStyling, ExternalStyling, ExternalModuleStyling, SassScss, DijitalSaatUygulamasi1, DijitalSaatUygulamasi2, DijitalSaatUygulamasi3, Greetings, Products, Image, ImageGallery, ProfileCard, BootstrapKlasikYontem, BootstrapModernYontem, ReactIcons, MaterialIcons, Events, ProductShop, State, Counter1, Birthday, UseEffect, FilterList, UseRef, ClassTurundeComponentler, FonksiyonTurundeComponentler, Fetch1, Fetch2, Countries, ParentComponent, Form1, Form2, Form3, Form4, Form5, FormikYup1, FormikYup2 } from "../components";
+import { Apples, Bananas1, Orange, Jsx1, Jsx2, Jsx3, Jsx4, InlineStyling, InternalStyling, ExternalStyling, ExternalModuleStyling, SassScss, DijitalSaatUygulamasi1, DijitalSaatUygulamasi2, DijitalSaatUygulamasi3, Greetings, Products, Image, ImageGallery, ProfileCard, BootstrapKlasikYontem, BootstrapModernYontem, ReactIcons, MaterialIcons, Events, ProductShop, State, Counter1, Birthday, UseEffect, FilterList, UseRef, ClassTurundeComponentler, FonksiyonTurundeComponentler, Fetch, Fetch2, Countries, ParentComponent, Form1, Form2, Form3, Form4, Form5, FormikYup1, FormikYup2 } from "../components";
 import UserLayout from '../layout/user-layout';
 
 const profileCardData = {
@@ -23,6 +23,7 @@ const AppRouter = () => {
                 <Route path="/" element={<HomePage />} />
 
                 <Route path='/fruits' element={<UserLayout />}>
+                    <Route index element={<Apples />} />
                     <Route path="apples" element={<Apples />} />
                     <Route path="bananas1" element={<Bananas1 />} />
                     <Route path="orange" element={<Orange />} />
@@ -35,6 +36,7 @@ const AppRouter = () => {
                     <Route path="3" element={<Jsx3 />} />
                     <Route path="4" element={<Jsx4 />} />
                 </Route>
+                
                 <Route path="styles">
                     <Route index element={<InlineStyling />} />
                     <Route path="inline" element={<InlineStyling />} />
@@ -43,6 +45,7 @@ const AppRouter = () => {
                     <Route path="external-module" element={<ExternalModuleStyling />} />
                     <Route path="sass-scss" element={<SassScss />} />
                 </Route>
+                {/*  */}
                 <Route path="dijital-saat-uygulamasi">
                     <Route index element={<DijitalSaatUygulamasi1 />} />
                     <Route path="1" element={<DijitalSaatUygulamasi1 />} />
@@ -86,8 +89,8 @@ const AppRouter = () => {
                     <Route path="fonksiyon-turunde-componentler" element={<FonksiyonTurundeComponentler />} />
                 </Route>
                 <Route path="fetch">
-                    <Route index element={<Fetch1 />} />
-                    <Route path="fetch1" element={<Fetch1 />} />
+                    <Route index element={<Fetch />} />
+                    <Route path="fetch" element={<Fetch />} />
                     <Route path="fetch2" element={<Fetch2 />} />
                     <Route path="countries" element={<Countries />} />
                 </Route>

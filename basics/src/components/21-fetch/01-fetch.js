@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Container, ListGroup } from 'react-bootstrap';
 
-const Fetch1 = () => {
+const Fetch = () => {
     const [users, setUsers] = useState({});
 
     let myArray = [];
@@ -50,4 +50,4 @@ const Fetch1 = () => {
     )
 }
 
-export default Fetch1;
+export default Fetch;

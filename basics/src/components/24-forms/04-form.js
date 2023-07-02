@@ -19,7 +19,7 @@ const Form4 = () => {
 
         setFormData(prev => ({
             ...prev,
-            [e.target.name]: value,
+            [e.target.name]: value, // köşeli parantez değişken olduğunu belirtir  
         }))
     };
 
